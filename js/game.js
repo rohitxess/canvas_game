@@ -207,4 +207,10 @@ var main = function () {
 //cross browser supprt for requestanimationframe
 
 var w = window;
-requestAnimationFrame = w.requestAnimationFrame ||w.webkitRequest
+w.requestAnimationFrame || w.webkitRequestAnimationFrame || w.msRequestAnimationFrame || w.mozRequestAnimationFrame;webkitRequest
+
+//playing this game 
+
+var then = Date.now();
+reset();
+main();
